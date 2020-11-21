@@ -18,6 +18,10 @@ public class SnakeAndLadder
 			{
 				case ladder:
 					position += die;
+					if (position>100)
+					{
+						position -= die;
+					}
 					break;
 				case snake:
 					position -= die;
