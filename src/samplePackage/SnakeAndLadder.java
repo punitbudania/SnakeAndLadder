@@ -7,9 +7,11 @@ public class SnakeAndLadder
 		final int ladder = 1;
 		final int snake = 2;
 		int position = 0;
+		int count = 0;
 		
 		while (position<100)
 		{
+			count++;
 			int dice = (int) Math.floor(Math.random()*100%6);
 			int die = dice + 1;
 			
@@ -33,7 +35,10 @@ public class SnakeAndLadder
 				default:
 					position += 0;
 			}
+			
+			System.out.println("Position: " + position);
 		}
-		System.out.println("Position: " + position);
+		
+		System.out.println("Count: " + count);
 	}
 }
